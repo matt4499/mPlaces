@@ -33,7 +33,7 @@ public class GlobalChatHandler implements CommandExecutor {
 					((Player) sender).kickPlayer("do not say the n word"); 
 					return true; 
 				}
-				DiscordWebhook webhook = new DiscordWebhook("removed discord webhook link");
+				DiscordWebhook webhook = new DiscordWebhook(" [-] removed discord webhook link");
 			    webhook.setContent(ChatColor.stripColor(str));
 			    webhook.setAvatarUrl("https://crafatar.com/avatars/" + user.getPlayer().getUniqueId());
 			    webhook.setUsername("[GLOBAL] " + ChatColor.stripColor(user.getPrefix()) + user.getPlayer().getDisplayName());
