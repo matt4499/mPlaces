@@ -37,7 +37,7 @@ public class Main extends JavaPlugin implements Listener {
 	}
 	@Override
 	public void onDisable() {
-		DiscordWebhook webhook = new DiscordWebhook("[removed webhook link]");
+		DiscordWebhook webhook = new DiscordWebhook("[removed webhook link] ");
 	    webhook.setContent("***Server is now offline***");
 	    webhook.setAvatarUrl("https://crafatar.com/avatars/f78a4d8d-d51b-4b39-98a3-230f2de0c670");
 	    webhook.setUsername("[Server]");
