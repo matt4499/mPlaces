@@ -25,7 +25,7 @@ public class Main extends JavaPlugin implements Listener {
 		this.getServer().getPluginManager().registerEvents(this, this);
 		this.getServer().getPluginManager().registerEvents(new PlaceController(), this);
 		this.getLogger().log(Level.INFO, "[mPlaces] Enabled");
-		DiscordWebhook webhook = new DiscordWebhook("https://canary.discordapp.com/api/webhooks/681272659559841812/LdDR-8XgUZaookuK0y2nbGnTxIeyzpKknzQnMnnwMInvqqz2nkBWCAcCUvijw57LdYDg");
+		DiscordWebhook webhook = new DiscordWebhook("[removed webhook link]");
 	    webhook.setContent("***Server is now online***");
 	    webhook.setAvatarUrl("https://crafatar.com/avatars/f78a4d8d-d51b-4b39-98a3-230f2de0c670");
 	    webhook.setUsername("[Server]");
@@ -37,7 +37,7 @@ public class Main extends JavaPlugin implements Listener {
 	}
 	@Override
 	public void onDisable() {
-		DiscordWebhook webhook = new DiscordWebhook("https://canary.discordapp.com/api/webhooks/681272659559841812/LdDR-8XgUZaookuK0y2nbGnTxIeyzpKknzQnMnnwMInvqqz2nkBWCAcCUvijw57LdYDg");
+		DiscordWebhook webhook = new DiscordWebhook("[removed webhook link]");
 	    webhook.setContent("***Server is now offline***");
 	    webhook.setAvatarUrl("https://crafatar.com/avatars/f78a4d8d-d51b-4b39-98a3-230f2de0c670");
 	    webhook.setUsername("[Server]");
@@ -54,7 +54,7 @@ public class Main extends JavaPlugin implements Listener {
         Location LobbySpawn = new Location(LobbyWorld, 0.5, 103.0, 0.5);
         e.getPlayer().teleport(LobbySpawn);
         MUtils.SendMsg(e.getPlayer(), ChatColor.GREEN + "Welcome back, " + e.getPlayer().getName() + " !");
-        DiscordWebhook webhook = new DiscordWebhook("https://canary.discordapp.com/api/webhooks/681272659559841812/LdDR-8XgUZaookuK0y2nbGnTxIeyzpKknzQnMnnwMInvqqz2nkBWCAcCUvijw57LdYDg");
+        DiscordWebhook webhook = new DiscordWebhook("[removed webhook link]");
 	    webhook.setContent("**" + e.getPlayer().getDisplayName() + "** has joined");
 	    webhook.setAvatarUrl("https://crafatar.com/avatars/f78a4d8d-d51b-4b39-98a3-230f2de0c670");
 	    webhook.setUsername("[Server]");
@@ -66,7 +66,7 @@ public class Main extends JavaPlugin implements Listener {
 	}
 	@EventHandler
 	public void LogoutMethod(PlayerQuitEvent e) {
-		 DiscordWebhook webhook = new DiscordWebhook("https://canary.discordapp.com/api/webhooks/681272659559841812/LdDR-8XgUZaookuK0y2nbGnTxIeyzpKknzQnMnnwMInvqqz2nkBWCAcCUvijw57LdYDg");
+		 DiscordWebhook webhook = new DiscordWebhook("[removed webhook link]");
 		    webhook.setContent("**" + e.getPlayer().getDisplayName() + "** has disconnected");
 		    webhook.setAvatarUrl("https://crafatar.com/avatars/f78a4d8d-d51b-4b39-98a3-230f2de0c670");
 		    webhook.setUsername("[Server]");
