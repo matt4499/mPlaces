@@ -1,0 +1,27 @@
+name: mplaces
+main: com.github.matt4499.mplaces.Main
+version: 1.0
+api-version: 1.15
+commands:
+   placecreate:
+      description: admin only
+      usage: "Usage: /mplacecreate [name]"
+      permission: group.owner
+      permissionmessage: "&cno permission"
+   placedelete:
+      description: admin only
+      usage: "Usage: /mplacedelete [name]"
+      permissionmessage: "&cno permission"
+      permission: group.owner
+   visit:
+      description: Visit a players place
+      usage: "Usage: /visit [name]"
+   g:
+      description: global chat
+      usage: "Usage: /g [text]"
+   gban:
+      description: admin only
+      usage: "/gban [player] [reason]"
+      permission: group.owner
+      permisionmessage: "&cno permission"
+      
